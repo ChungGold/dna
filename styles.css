@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+}
+
+div {
+    position: absolute;
+    height: 0.25rem;
+    width: 0.25rem;
+    border-radius: 50%;
+}
+
+#dna1 {
+    background-color:green;
+    margin-left: 50%;
+    animation: moveLeftRight 1.5s infinite alternate ease-in-out;
+}
+
+#dna2 {
+    background-color:red;
+    margin-left: 50%;
+    animation: moveRightLeft 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes moveLeftRight{
+    0%{
+        transform: translateX(-2rem);
+    }
+    100%{
+        transform: translateX(2rem);
+    }
+}
+
+@keyframes moveRightLeft{
+    0%{
+        transform: translateX(2rem);
+    }
+    100%{
+        transform: translateX(-2rem);
+    }
+}
